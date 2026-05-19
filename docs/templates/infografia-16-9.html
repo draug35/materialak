@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="eu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Infografia 16:9</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <style>
+      .slide {
+        aspect-ratio: 16 / 9;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1.1fr 0.9fr;
+        margin-top: 32px;
+        padding: clamp(24px, 5vw, 56px);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <p class="eyebrow">Txantiloia</p>
+      <h1>Infografia 16:9</h1>
+      <section class="slide" aria-label="Infografia">
+        <div>
+          <h2>Izenburua</h2>
+          <p>Ideia nagusia eta testuingurua.</p>
+        </div>
+        <div class="panel">
+          <h2>Datuak</h2>
+          <ul class="list">
+            <li>1. puntua</li>
+            <li>2. puntua</li>
+            <li>3. puntua</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
