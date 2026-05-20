@@ -42,3 +42,13 @@ Todo lo publicable debe ir dentro de:
 ```txt
 docs/
 ```
+
+Las áreas principales son:
+
+```txt
+docs/pastoraltza/
+docs/psikologia-btx2/
+docs/historia-btx2/
+docs/ekonomia-dbh4/
+docs/erlijioa-btx2/
+```
