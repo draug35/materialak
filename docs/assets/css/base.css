@@ -8,6 +8,7 @@
   --accent: #226f6c;
   --accent-2: #9a4f2c;
   --focus: #f1b84b;
+  --soft: #eef3f3;
 }
 
 * {
@@ -20,6 +21,41 @@ body {
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.55;
+}
+
+body[data-area="pastoraltza"] {
+  --accent: #226f6c;
+  --accent-2: #9a4f2c;
+  --focus: #f1b84b;
+  --soft: #eef6f4;
+}
+
+body[data-area="psikologia"] {
+  --accent: #4a5f9e;
+  --accent-2: #8a4b65;
+  --focus: #75b6c8;
+  --soft: #f0f3fb;
+}
+
+body[data-area="historia"] {
+  --accent: #6d5635;
+  --accent-2: #8d3f35;
+  --focus: #d2aa58;
+  --soft: #f6f2ec;
+}
+
+body[data-area="ekonomia"] {
+  --accent: #27644f;
+  --accent-2: #5f6470;
+  --focus: #8fbd6f;
+  --soft: #eef6f0;
+}
+
+body[data-area="erlijioa"] {
+  --accent: #684f8f;
+  --accent-2: #2f6f77;
+  --focus: #d0a54f;
+  --soft: #f3f0f7;
 }
 
 a {
@@ -71,6 +107,17 @@ nav a:hover,
   max-width: 780px;
 }
 
+.hero-wide {
+  background: linear-gradient(90deg, var(--soft), var(--surface));
+  border-left: 8px solid var(--accent);
+  max-width: none;
+  padding: clamp(24px, 5vw, 48px);
+}
+
+.hero-wide p {
+  max-width: 760px;
+}
+
 .eyebrow {
   color: var(--accent-2);
   font-size: 0.82rem;
@@ -115,6 +162,10 @@ code {
   margin-top: 42px;
 }
 
+.grid-tight {
+  margin-top: 22px;
+}
+
 .card,
 .panel {
   background: var(--surface);
@@ -145,9 +196,75 @@ code {
   font-size: 0.92rem;
 }
 
+.card .label {
+  display: inline-block;
+  margin-top: 14px;
+}
+
 .panel {
   margin-top: 34px;
   padding: 24px;
+}
+
+.panel-header {
+  align-items: start;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+}
+
+.panel-header p {
+  margin-top: 0;
+  max-width: 620px;
+}
+
+.label {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 4px 10px;
+}
+
+.meta {
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.meta span {
+  background: var(--soft);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.catalog-item {
+  border-left: 4px solid var(--focus);
+  display: grid;
+  gap: 8px;
+  padding: 10px 0 10px 12px;
+}
+
+.catalog-item a {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.catalog-item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.path {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88rem;
 }
 
 .list {
@@ -175,5 +292,9 @@ code {
 
   nav {
     gap: 10px 14px;
+  }
+
+  .panel-header {
+    display: block;
   }
 }

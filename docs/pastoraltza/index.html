@@ -6,7 +6,7 @@
     <title>Pastoraltza - Materialak</title>
     <link rel="stylesheet" href="../assets/css/base.css">
   </head>
-  <body>
+  <body data-area="pastoraltza">
     <header class="site-header">
       <a class="brand" href="../">Materialak</a>
       <nav aria-label="Atal nagusiak">
@@ -17,54 +17,65 @@
       </nav>
     </header>
     <main class="page">
-      <section class="hero">
+      <section class="hero hero-wide">
         <p class="eyebrow">Pastoraltza BH</p>
         <h1>Pastoraltza BH</h1>
         <p>
           Gelarako, klaustrorako eta ikasturteko une esanguratsuetarako
           baliabide pastoralak antolatzeko katalogo editoriala.
         </p>
+        <div class="meta" aria-label="Pastoraltza egoera">
+          <span>1 material argitaratua</span>
+          <span>4 bilduma</span>
+          <span>Google Sites-erako egokia</span>
+        </div>
       </section>
 
       <section class="panel">
-        <h2>Une honetan</h2>
-        <p>
-          Lehen material kanonikoa argitaratuta dago Goizeko gogoetak
-          bilduman. Hurrengo urratsa bilduma bakoitzean material berriak
-          gehitzea izango da, beti izenburua, etapa, erabilera eta egoera
-          adierazita.
-        </p>
+        <div class="panel-header">
+          <h2>Une honetan</h2>
+          <p>
+            Lehen material kanonikoa argitaratuta dago Goizeko gogoetak
+            bilduman. Hurrengo urratsa bilduma bakoitzean material berriak
+            gehitzea izango da, beti izenburua, etapa, erabilera eta egoera
+            adierazita.
+          </p>
+        </div>
       </section>
 
       <section class="grid" aria-label="Pastoraltza bildumak">
-        <article class="card">
+        <a class="card" href="#goizeko-gogoetak">
           <span>Goizeko gogoetak</span>
           <small>
             Egunari hasiera emateko gogoeta laburrak, taldearen giroa zaindu
             eta balio hezitzaile bat lantzeko.
           </small>
-        </article>
-        <article class="card">
+          <span class="label">argitaratua</span>
+        </a>
+        <a class="card" href="#ikasturteko-ibilbideak">
           <span>Ikasturteko ibilbideak</span>
           <small>
             Ikasturte osoan zehar jarraipena duten proposamenak, kanpainak edo
             etapa pastoralen sekuentziak antolatzeko.
           </small>
-        </article>
-        <article class="card">
+          <span class="label">prestatzeko</span>
+        </a>
+        <a class="card" href="#egoera-bereziak">
           <span>Egoera bereziak</span>
           <small>
             Dolua, gatazkak, ospakizunak edo komunitatearen une bereziak
             laguntzeko baliabide zainduak jasotzeko.
           </small>
-        </article>
-        <article class="card">
+          <span class="label">prestatzeko</span>
+        </a>
+        <a class="card" href="#irakaslearentzat-gida">
           <span>Irakaslearentzat gida</span>
           <small>
             Irakasleek jarduerak prestatu, egokitu eta gelan kokatzeko
             orientabide praktikoak biltzeko.
           </small>
-        </article>
+          <span class="label">prestatzeko</span>
+        </a>
       </section>
 
       <section class="panel" id="goizeko-gogoetak">
@@ -74,12 +85,13 @@
           laburrak, galdera gidariak eta taldean partekatzeko proposamenak.
         </p>
         <ul class="list" aria-label="Goizeko gogoetak materialak">
-          <li>
+          <li class="catalog-item">
             <strong>Izenburua:</strong>
             <a href="goizeko-gogoetak/ikustearen-pribilegioa/">Ikustearen pribilegioa</a> |
             <strong>Etapa:</strong> DBH 1-2, DBH 3-4, BTX 1-2 |
             <strong>Erabilera:</strong> goizeko hasiera |
             <strong>Egoera:</strong> argitaratua
+            <span class="path">goizeko-gogoetak/ikustearen-pribilegioa/</span>
           </li>
         </ul>
       </section>
