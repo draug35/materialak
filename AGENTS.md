@@ -73,3 +73,20 @@ src/zirriborroak/
 ```
 
 No crear carpetas nuevas de primer nivel sin una razón clara.
+
+## 4. Ficha editorial mínima
+
+Cada nuevo material HTML debe incluir al inicio un comentario con estos campos:
+
+```html
+<!--
+Materiala:
+Arloa:
+Bilduma:
+Etapa edo maila:
+Erabilera:
+Egoera:
+Iturria, si procede:
+Azken eguneraketa:
+-->
+```
