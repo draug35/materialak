@@ -1,18 +1,44 @@
 # AGENTS.md
 
-## Project Intent
+Este repositorio funciona como una pequeña editorial educativa digital para crear, revisar y mantener materiales de aula.
 
-This repository separates publishable teaching materials from working notes.
+## 1. Objetivo general
 
-- Publishable files live in `docs/`.
-- Drafts, notes, and private working material live in `src/`.
-- Shared visual styles live in `docs/assets/css/base.css`.
-- Reusable HTML starting points live in `docs/templates/`.
+Crear materiales educativos digitales claros, rigurosos, visualmente cuidados y reutilizables para:
 
-## Editing Guidelines
+- Pastoraltza BH
+- Psikologia BTX2
+- Historia BTX2
+- Ekonomia DBH4
+- Erlijioa BTX2
 
-- Keep publishable pages static, portable, and readable without a build step.
-- Use relative links so GitHub Pages can serve the site from `/materialak/`.
-- Prefer small, focused HTML pages over generated bundles.
-- Do not place private notes or unfinished drafts under `docs/`.
-- Preserve the subject directory structure unless the user asks to reorganize it.
+Los materiales deben poder usarse en aula, compartirse con profesorado o alumnado y, cuando proceda, enlazarse desde Google Sites.
+
+Este repositorio no sustituye a Google Drive ni a Google Sites:
+
+- Google Drive conserva los documentos fuente, borradores, PDFs, presentaciones y materiales editables.
+- GitHub conserva las versiones web, plantillas, estilos, índices y materiales reutilizables.
+- Google Sites funciona como portal interno para el claustro, especialmente en Pastoraltza.
+- Codex ayuda a crear, revisar, mejorar y ordenar los materiales.
+
+## 2. Principio editorial
+
+No crear piezas sueltas sin criterio.
+
+Cada material debe:
+
+1. integrarse en la estructura del repositorio;
+2. usar o adaptar una plantilla existente;
+3. mantener coherencia visual, lingüística y pedagógica;
+4. actualizar el índice correspondiente;
+5. poder revisarse y reutilizarse en el futuro.
+
+La prioridad no es producir mucho, sino producir materiales que tengan continuidad, sentido y calidad.
+
+## 3. Estructura obligatoria
+
+Todo lo publicable debe ir dentro de:
+
+```txt
+docs/
+```
