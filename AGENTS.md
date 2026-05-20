@@ -52,3 +52,24 @@ docs/historia-btx2/
 docs/ekonomia-dbh4/
 docs/erlijioa-btx2/
 ```
+
+Las plantillas comunes están en:
+
+```txt
+docs/templates/
+```
+
+El estilo común está en:
+
+```txt
+docs/assets/css/base.css
+```
+
+Los borradores, notas internas o documentación no publicable deben ir en:
+
+```txt
+src/oharrak/
+src/zirriborroak/
+```
+
+No crear carpetas nuevas de primer nivel sin una razón clara.
